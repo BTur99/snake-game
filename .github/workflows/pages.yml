@@ -7,7 +7,7 @@ on:
       - index.html
       - index.css
       - index.js
-      - og-image.png
+      - assets/snake.png
       - .github/workflows/pages.yml
   workflow_dispatch:
 
@@ -33,7 +33,9 @@ jobs:
       - name: Stage static site
         run: |
           mkdir -p _site
-          cp index.html index.css index.js og-image.png _site/
+          mkdir -p _site/assets
+          cp index.html index.css index.js _site/
+          cp assets/snake.png _site/assets/
           touch _site/.nojekyll
 
       - name: Setup Pages
