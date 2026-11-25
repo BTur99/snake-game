@@ -1,20 +1,43 @@
 # Dependencies
 node_modules/
+.pnpm-store/
 
 # Build output
 dist/
 .cache/
 _site/
+coverage/
+.nyc_output/
 
 # Test artifacts
 test-results/
 playwright-report/
 blob-report/
+playwright/.cache/
 
-# OS / editor
+# Tool caches
+.eslintcache
+.stylelintcache
+.prettiercache
+*.tsbuildinfo
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# OS / editors
 .DS_Store
 Thumbs.db
-*.log
+desktop.ini
+.idea/
+.vscode/
+*.iml
+*.swp
+*~
 
 # Local opencode agent tooling
 .opencode/

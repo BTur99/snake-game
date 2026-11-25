@@ -3,6 +3,11 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+    paths:
+      - index.html
+      - index.css
+      - index.js
+      - .github/workflows/pages.yml
   workflow_dispatch:
 
 permissions:
